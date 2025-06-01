@@ -6,11 +6,11 @@
       }
     ],
     "env": {
-      "VITE_API_URL": "https://nodemail-backendservice.onrender.com"
+      "VITE_API_URL": "https://constructionarmor-backend-1.onrender.com"
     },
     "build": {
       "env": {
-        "VITE_API_URL": "https://nodemail-backendservice.onrender.com"
+        "VITE_API_URL": "https://constructionarmor-backend-1.onrender.com"
       }
     }
   }
