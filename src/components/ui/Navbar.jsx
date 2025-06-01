@@ -64,12 +64,14 @@ const Navbar = () => {
               borderRadius: '4px' 
             }} 
           />
-          <img src={logo} alt="GuardArmor Logo" style={{ width: '900px', height: 'auto' }} />
-          <img 
-            src={mapleLeaf} 
-            alt="Canadian Maple Leaf" 
-            style={{ width: '35px', height: 'auto', marginLeft: '2px' }}
-          />              
+
+          <img src={logo} alt="Construction Armor Logo" style={{ 
+            width: '900px', 
+            height: 'auto',
+            transform: 'scale(1.5)',
+            transformOrigin: 'left center'
+          }} />
+             
         </div>
       </div>
       <div className="navbar-links-container">

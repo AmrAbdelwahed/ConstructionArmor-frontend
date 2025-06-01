@@ -73,10 +73,10 @@ const About = () => {
           {/* Contact Information */}
           <div className="mt-6 space-y-2 text-gray-700">
             <p className="text-lg">
-              Head Office: <span className="font-semibold">Toronto, Canada <img src={canadaImage} alt="🇨🇦" className="inline-block w-5 h-3.5" /></span>
+              Head Office: <span className="font-semibold">Oakville ON Canada <img src={canadaImage} alt="🇨🇦" className="inline-block w-5 h-3.5" /></span>
             </p>
             <p className="text-lg">
-              Email Address: <span className="font-semibold">info@guardarmor.ca</span>
+              Email Address: <span className="font-semibold">contact@ConstructionArmor.ca</span>
             </p>
             <p className="text-lg"> 
               Phone Number: <span className="font-semibold"> +1(866) 603-2179 </span>
@@ -88,37 +88,7 @@ const About = () => {
       {/* Footer Section */}
       <div className="bg-[#d11234] py-8 mt-20">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center space-x-6">
-            {/* Instagram */}
-            <a 
-              href="https://www.instagram.com/guardarmor_security" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-200 transition-colors"
-            >
-              <Instagram size={24} />
-            </a>
-
-            {/* X (Twitter) */}
-            <a 
-              href="https://x.com/GuardArmorSecur" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-200 transition-colors"
-            >
-              <SiX size={24} />
-            </a>
-
-            {/* TikTok */}
-            <a 
-              href="https://www.tiktok.com/@guard.armor.securi" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-200 transition-colors"
-            >
-              <SiTiktok size={24} />
-            </a>
-            
+          <div className="flex justify-center space-x-6">            
             {/* LinkedIn */}
             <a 
               href="https://www.linkedin.com/company/guard-armor-security-ltd/" 
@@ -141,7 +111,7 @@ const About = () => {
           </div>
 
           <p className="text-center text-white mt-4">
-            &copy; 2021 Guard Armor Security Ltd. All rights reserved.
+            &copy; 2021 Armor Staffing Solutions Ltd. All rights reserved.
           </p>
         </div>
       </div>
