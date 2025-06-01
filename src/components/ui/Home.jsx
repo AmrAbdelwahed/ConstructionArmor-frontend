@@ -20,7 +20,7 @@ import metroscg from '@/assets/metroscg.jpg';
 import mikhaiellogistics from '@/assets/mikhaiellogistics.jpeg';
 import myyellow from '@/assets/myyellow.jpg';
 import suretrack from '@/assets/suretrack.jpg';
-import rafat from '@/assets/rafat.jpg';
+import rafat from '@/assets/Rafat.jpg';
 import BannerBackground from "@/assets/img7.jpg";
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
