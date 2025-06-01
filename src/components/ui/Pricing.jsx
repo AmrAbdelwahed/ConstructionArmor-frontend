@@ -6,7 +6,7 @@ const Pricing = () => {
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#f47d23] mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#d52b1e] mb-8">
             Pricing
           </h2>
           
@@ -18,19 +18,19 @@ const Pricing = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <Clock className="w-12 h-12 mx-auto mb-4" style={{ color: '#f47d23' }} />
+              <Clock className="w-12 h-12 mx-auto mb-4" style={{ color: '#d52b1e' }} />
               <h3 className="text-lg font-bold mb-2">Temporary</h3>
               <p className="text-gray-600">Short-term staffing solutions for immediate needs</p>
             </div>
 
             <div className="text-center">
-              <UserPlus className="w-12 h-12 mx-auto mb-4" style={{ color: '#f47d23' }} />
+              <UserPlus className="w-12 h-12 mx-auto mb-4" style={{ color: '#d52b1e' }} />
               <h3 className="text-lg font-bold mb-2">Temporary to Permanent</h3>
               <p className="text-gray-600">Try before you hire permanent staff</p>
             </div>
 
             <div className="text-center">
-              <Briefcase className="w-12 h-12 mx-auto mb-4" style={{ color: '#f47d23' }} />
+              <Briefcase className="w-12 h-12 mx-auto mb-4" style={{ color: '#d52b1e' }} />
               <h3 className="text-lg font-bold mb-2">Direct Hires</h3>
               <p className="text-gray-600">Permanent placement services</p>
             </div>

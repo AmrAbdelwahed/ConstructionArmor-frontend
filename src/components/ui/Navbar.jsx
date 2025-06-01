@@ -64,7 +64,7 @@ const Navbar = () => {
               borderRadius: '4px' 
             }} 
           />
-          <img src={logo} alt="GuardArmor Logo" style={{ height: 'auto' }} />
+          <img src={logo} alt="GuardArmor Logo" style={{ width: '900px', height: 'auto' }} />
           <img 
             src={mapleLeaf} 
             alt="Canadian Maple Leaf" 
@@ -98,7 +98,7 @@ const Navbar = () => {
           sx={{
             width: 250,
             height: '100vh',
-            backgroundColor: '#f47d23',
+            backgroundColor: '#d52b1e',
             color: 'white',
             paddingTop: '10px',
             paddingBottom: '10px',

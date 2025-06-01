@@ -38,7 +38,7 @@ img {
 
 /* Header & Navigation */
 .header-bar {
-  background-color: rgb(244, 125, 35);
+  background-color: rgb(213, 43, 30);
   width: 100%;
   height: 70px;
   display: flex;
@@ -101,7 +101,7 @@ nav {
 .primary-button {
   padding: 0.7rem 1.5rem;
   margin: -0.5px;
-  background-color: rgb(231, 129, 50);
+  background-color: rgb(213, 43, 30);
   outline: none;
   border: none;
   border-radius: 0.3rem;
@@ -113,7 +113,7 @@ nav {
 }
 
 .primary-button:hover {
-  background-color: rgb(237, 110, 13); /* CHANGE TO DARKER */
+  background-color: rgb(213, 43, 30); /* CHANGE TO DARKER */
   transform: scale(1.05);
 }
 
@@ -145,7 +145,7 @@ nav {
 }
 
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: #d52b1e;
 }
 
 /* Home Banner */
@@ -215,7 +215,7 @@ nav {
 }
 
 .primary-info-text {
-  color: rgb(244, 125, 35);
+  color: rgb(213, 43, 30);
   margin-top: 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -406,7 +406,7 @@ nav {
 .testimonials-stars-container svg {
   margin: 0 0.25rem;
   font-size: 1.5rem;
-  color: #fe9e0d;
+  color: #d52b1e;
 }
 
 /* Footer */

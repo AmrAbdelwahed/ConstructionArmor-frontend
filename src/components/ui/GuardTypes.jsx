@@ -100,7 +100,7 @@ const WorkerTypes = () => {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 leading-tight">
               Find the Right
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#f47d23] to-orange-500 mt-2">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#d52b1e] to-[#ac332b] mt-2">
                 Specialized Workers
               </span>
             </h2>
