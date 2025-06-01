@@ -61,15 +61,17 @@ const Navbar = () => {
             style={{ 
               height: '90px', 
               width: 'auto', 
-              borderRadius: '4px' 
+              borderRadius: '2px',
+              marginLeft: '-12px'  // Adjust this value to get the spacing you want
             }} 
           />
 
           <img src={logo} alt="Construction Armor Logo" style={{ 
             width: '900px', 
             height: 'auto',
-            transform: 'scale(1.5)',
-            transformOrigin: 'left center'
+            transform: 'scaleX(1.34) scaleY(1.3)',
+            transformOrigin: 'left center',
+            marginLeft: '-12px'  // Adjust this value to get the spacing you want
           }} />
              
         </div>
