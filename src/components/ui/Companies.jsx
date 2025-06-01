@@ -128,7 +128,7 @@ const Companies = () => {
 
       <div className="container-form">
         <div className="header">
-          <div className="text"  style={{ color: '#d52b1e' }}>Employers Start Here</div>
+          <div className="text"  style={{ color: '#d11234' }}>Employers Start Here</div>
         </div>
         <div className="inputs">
           {[ 

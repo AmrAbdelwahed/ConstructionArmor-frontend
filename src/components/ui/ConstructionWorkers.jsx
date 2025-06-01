@@ -209,7 +209,7 @@ const ConstructionWorkers = () => {
 
       <div className="container-form">
         <div className="header">
-          <div className="text" style={{ color: '#d52b1e' }}>Worker Application</div>
+          <div className="text" style={{ color: '#d11234' }}>Worker Application</div>
         </div>
         <div className="inputs">
           {[ 

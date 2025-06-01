@@ -5,7 +5,7 @@ const StreamlineHiring = () => {
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-[#d52b1e] text-center">
+          <h2 className="text-4xl font-bold text-[#d11234] text-center">
             24/7 Support
           </h2>
           <br />

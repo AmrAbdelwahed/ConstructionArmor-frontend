@@ -98,7 +98,7 @@ const Navbar = () => {
           sx={{
             width: 250,
             height: '100vh',
-            backgroundColor: '#d52b1e',
+            backgroundColor: '#d11234',
             color: 'white',
             paddingTop: '10px',
             paddingBottom: '10px',

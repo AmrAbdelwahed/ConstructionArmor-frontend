@@ -42,7 +42,7 @@ const Home = () => {
             <Link
               to="/companies-for-hire"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#d52b1e] rounded-lg text-center hover:text-white hover:bg-[#ac332b] transition-colors duration-300 w-full sm:w-80 sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#d11234] rounded-lg text-center hover:text-white hover:bg-[#ac332b] transition-colors duration-300 w-full sm:w-80 sm:mx-2"
               >
               Employers Start Here
             </Link>
@@ -50,7 +50,7 @@ const Home = () => {
             <Link
               to="/construction-worker-register"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#d52b1e] rounded-lg text-center hover:text-white hover:bg-[#ac332b] transition-colors duration-300 w-full sm:w-80 sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#d11234] rounded-lg text-center hover:text-white hover:bg-[#ac332b] transition-colors duration-300 w-full sm:w-80 sm:mx-2"
               >
               Job Seekers Start Here
             </Link>

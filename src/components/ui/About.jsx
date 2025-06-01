@@ -10,7 +10,7 @@ const About = () => {
     <div className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto mb-16 text-center">
-          <h2 className="text-4xl font-bold text-[#d52b1e] mb-4">
+          <h2 className="text-4xl font-bold text-[#d11234] mb-4">
             About CONSTRUCTION ARMOR
           </h2>
           <div className="flex justify-center mt-2">
@@ -21,7 +21,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           <div>
             <div className="mb-4">
-              <Award size={32} className="text-[#d52b1e]" />
+              <Award size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Committed Leader in Staffing
@@ -35,7 +35,7 @@ const About = () => {
 
           <div>
             <div className="mb-4">
-              <Shield size={32} className="text-[#d52b1e]" />
+              <Shield size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Responsible & Efficient Marketplace
@@ -49,7 +49,7 @@ const About = () => {
 
           <div>
             <div className="mb-4">
-              <Zap size={32} className="text-[#d52b1e]" />
+              <Zap size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Automated Onboarding
@@ -66,7 +66,7 @@ const About = () => {
           {/* Contact Us Button */}
           <a 
             href="mailto:info@guardarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
-            className="inline-block px-8 py-3 bg-[#d52b1e] text-white font-bold rounded-lg hover:text-white hover:bg-[#ac332b] transition-colors">
+            className="inline-block px-8 py-3 bg-[#d11234] text-white font-bold rounded-lg hover:text-white hover:bg-[#ac332b] transition-colors">
             Contact Us
           </a>
 
@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="bg-[#d52b1e] py-8 mt-20">
+      <div className="bg-[#d11234] py-8 mt-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center space-x-6">
             {/* Instagram */}

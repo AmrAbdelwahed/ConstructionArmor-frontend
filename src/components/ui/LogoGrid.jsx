@@ -7,7 +7,7 @@ const LogoGrid = ({ logos, title }) => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {title && (
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-[#d52b1e] mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-[#d11234] mb-8">
               {title}
             </h2>
           )}

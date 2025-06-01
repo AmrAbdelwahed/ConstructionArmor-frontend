@@ -6,7 +6,7 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-24">
-            <span className=" text-[#d52b1e]">
+            <span className=" text-[#d11234]">
               How You Benefit
             </span>
           </h2>
@@ -15,13 +15,13 @@ const Benefits = () => {
             {/* Construction Companies Benefits */}
             <div className="relative">
               <div className="relative bg-white p-10 rounded-3xl shadow-xl">
-                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#d52b1e] to-[#ac332b] text-white px-6 py-3 rounded-full font-semibold">
+                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#d11234] to-[#ac332b] text-white px-6 py-3 rounded-full font-semibold">
                   For Construction Companies
                 </div>
                 
                 <div className="space-y-8 mt-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-[#d52b1e]">
+                    <h3 className="text-2xl font-bold mb-4 text-[#d11234]">
                       Recruitment Solutions We Provide
                     </h3>
                     <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
@@ -41,13 +41,13 @@ const Benefits = () => {
             {/* Construction Workers Benefits */}
             <div className="relative">
               <div className="relative bg-white p-10 rounded-3xl shadow-xl">
-                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#d52b1e] to-[#ac332b] text-white px-6 py-3 rounded-full font-semibold">
+                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#d11234] to-[#ac332b] text-white px-6 py-3 rounded-full font-semibold">
                   For Construction Workers
                 </div>
                 
                 <div className="space-y-8 mt-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4 text-[#d52b1e]">
+                    <h3 className="text-2xl font-bold mb-4 text-[#d11234]">
                       Are You a Job Seeker?
                     </h3>
                     <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
@@ -56,7 +56,7 @@ const Benefits = () => {
                   </div>
                   
                   <div className="group">
-                    <h4 className="text-xl font-bold mb-3 text-[#d52b1e] group-hover:text-[#ac332b] transition-colors">
+                    <h4 className="text-xl font-bold mb-3 text-[#d11234] group-hover:text-[#ac332b] transition-colors">
                       Accessible Application Process
                     </h4>
                     <p className="text-gray-600 leading-relaxed">
