@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import DialpadTwoToneIcon from '@mui/icons-material/DialpadTwoTone';
 import BuildIcon from '@mui/icons-material/Build';
 import InfoIcon from '@mui/icons-material/Info';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
 import Navbar from './Navbar';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
@@ -100,6 +101,7 @@ const ConstructionWorkers = () => {
     lastName: '',
     email: '',
     phone: '',
+    city: '',
     specialtyCategory: '',
     specialtySubcategory: '',
     yearsOfExperience: '',
@@ -123,6 +125,7 @@ const ConstructionWorkers = () => {
     if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
     if (!emailRegex.test(formData.email)) newErrors.email = 'Invalid email format';
     if (!phoneRegex.test(formData.phone)) newErrors.phone = 'Invalid phone format';
+    if (!formData.city.trim()) newErrors.city = 'City is required';
     if (!formData.specialtyCategory) newErrors.specialtyCategory = 'Specialty category is required';
     if (!formData.specialtySubcategory) newErrors.specialtySubcategory = 'Specialty subcategory is required';
     if (!formData.yearsOfExperience.trim()) newErrors.yearsOfExperience = 'Years of experience is required';
@@ -183,6 +186,7 @@ const ConstructionWorkers = () => {
           lastName: '',
           email: '',
           phone: '',
+          city: '',
           specialtyCategory: '',
           specialtySubcategory: '',
           yearsOfExperience: '',
@@ -217,6 +221,7 @@ const ConstructionWorkers = () => {
             { icon: AccountCircleIcon, name: 'lastName', placeholder: 'Last Name' },
             { icon: EmailIcon, name: 'email', placeholder: 'Your Email Address', type: 'email' },
             { icon: DialpadTwoToneIcon, name: 'phone', placeholder: 'Phone Number', type: 'tel' },
+            { icon: LocationCityIcon, name: 'city', placeholder: 'Enter your City' },
           ].map(({ icon: Icon, name, placeholder, type = 'text' }) => (
             <div className="input" key={name}>
               <Icon style={{ margin: '0px 30px', color: '#555' }} />
