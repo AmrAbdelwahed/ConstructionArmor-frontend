@@ -8,9 +8,11 @@ import Pricing from './Pricing';
 import About from './About';
 import ThreeImages from './ThreeImages';
 import LogoGrid from './LogoGrid';
-import image1 from '@/assets/car-guard.jpg';
-import image2 from '@/assets/two-guards.jpg';
-import image3 from '@/assets/guardback.jpg';
+import image1 from '@/assets/img1.jpg';
+import image2 from '@/assets/img2.jpg';
+import image3 from '@/assets/img3.jpg';
+import image8 from '@/assets/img8.jpg';
+
 import rafih from '@/assets/rafih-logo-hd.jpg';
 import remax from '@/assets/remax.png';
 import scotlynn from '@/assets/scotlynn.png';
@@ -18,7 +20,8 @@ import metroscg from '@/assets/metroscg.jpg';
 import mikhaiellogistics from '@/assets/mikhaiellogistics.jpeg';
 import myyellow from '@/assets/myyellow.jpg';
 import suretrack from '@/assets/suretrack.jpg';
-import BannerBackground from "@/assets/securityguard.png";
+import rafat from '@/assets/rafat.jpg';
+import BannerBackground from "@/assets/img7.jpg";
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 
@@ -72,7 +75,7 @@ const Home = () => {
         <GuardTypes />
       </div>
       {/* Three Images Component */}
-      <ThreeImages image1={image3} image2={image2} image3={image1} />
+      <ThreeImages image1={image8} image2={image2} image3={image1} />
      
       <div id="pricing">
         <Pricing />
@@ -82,13 +85,14 @@ const Home = () => {
         <LogoGrid
           title="Our Trusted Partners"
           logos={[
-            { src: rafih, alt: "Rafih" },
-            { src: remax, alt: "Remax" },
-            { src: metroscg, alt: "Metro SCG" },
-            { src: scotlynn, alt: "Scotlynn" },
-            { src: mikhaiellogistics, alt: "Mikhaiel Logistics" },
-            { src: myyellow, alt: "My Yellow" },
-            { src: suretrack, alt: "Suretrack" },
+            // { src: rafih, alt: "Rafih" },
+            // { src: remax, alt: "Remax" },
+            // { src: metroscg, alt: "Metro SCG" },
+            // { src: scotlynn, alt: "Scotlynn" },
+            // { src: mikhaiellogistics, alt: "Mikhaiel Logistics" },
+            // { src: myyellow, alt: "My Yellow" },
+            // { src: suretrack, alt: "Suretrack" },
+            { src: rafat, alt: "Rafat" },
           ]}
         />
       </div>

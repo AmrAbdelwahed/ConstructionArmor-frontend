@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Added title to the props
 const LogoGrid = ({ logos, title }) => {
   return (
     <div className="bg-white py-16">
@@ -12,14 +11,14 @@ const LogoGrid = ({ logos, title }) => {
             </h2>
           )}
          
-          {/* Grid with 4 columns on large screens, 2 on medium, 1 on small */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+          {/* Responsive grid: 1 column for single logo, 2 columns for multiple logos */}
+          <div className={`grid gap-8 w-full ${logos.length === 1 ? 'grid-cols-1 place-items-center' : 'grid-cols-1 md:grid-cols-2'}`}>
             {logos.map((logo, index) => (
-              <div key={index} className="flex items-center justify-center h-24">
+              <div key={index} className="flex items-center justify-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-24 max-w-full object-contain"
+                  className={`object-contain ${logos.length === 1 ? 'max-h-32 md:max-h-40 lg:max-h-48' : 'max-h-24'} max-w-full`}
                 />
               </div>
             ))}
