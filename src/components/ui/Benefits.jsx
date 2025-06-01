@@ -6,7 +6,7 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-24">
-            <span className=" text-[#d11234]">
+            <span>
               How You Benefit
             </span>
           </h2>

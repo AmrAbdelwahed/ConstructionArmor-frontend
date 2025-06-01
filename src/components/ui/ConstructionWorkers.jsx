@@ -312,7 +312,7 @@ const ConstructionWorkers = () => {
           <div className="input-container">
             <div className="input">
               <TextField
-                label="Additional Details (please include your availability)"
+                label="Additional Details"
                 multiline
                 rows={4}
                 variant="outlined"
