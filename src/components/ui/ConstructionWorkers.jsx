@@ -221,7 +221,7 @@ const ConstructionWorkers = () => {
             { icon: AccountCircleIcon, name: 'lastName', placeholder: 'Last Name' },
             { icon: EmailIcon, name: 'email', placeholder: 'Your Email Address', type: 'email' },
             { icon: DialpadTwoToneIcon, name: 'phone', placeholder: 'Phone Number', type: 'tel' },
-            { icon: LocationCityIcon, name: 'city', placeholder: 'Enter your City' },
+            { icon: LocationCityIcon, name: 'city', placeholder: 'Your City' },
           ].map(({ icon: Icon, name, placeholder, type = 'text' }) => (
             <div className="input" key={name}>
               <Icon style={{ margin: '0px 30px', color: '#555' }} />
