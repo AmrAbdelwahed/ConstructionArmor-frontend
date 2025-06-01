@@ -34,7 +34,7 @@ const Home = () => {
       >
         <div className="px-4 py-12 md:px-8">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-8">
-            Find Security Guards the Easy Way.
+            Find Staff the Easy Way.
           </h1>
          
           <div className="flex flex-wrap justify-center sm:justify-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-20 mb-4">
@@ -42,17 +42,17 @@ const Home = () => {
             <Link
               to="/companies-for-hire"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center  hover:bg-gray-900 transition-colors duration-300 w-full sm:w-80 sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#f47d23] rounded-lg text-center hover:text-white hover:bg-orange-800 transition-colors duration-300 w-full sm:w-80 sm:mx-2"
               >
-              Companies Start Here
+              Employers Start Here
             </Link>
             {/* Security Guards Start Here Button */}
             <Link
-              to="/security-guard-register"
+              to="/construction-worker-register"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center  hover:bg-gray-900 transition-colors duration-300 w-full sm:w-80 sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#f47d23] rounded-lg text-center hover:text-white hover:bg-orange-800 transition-colors duration-300 w-full sm:w-80 sm:mx-2"
               >
-              Security Guards Start Here
+              Job Seekers Start Here
             </Link>
           </div>
         </div>
@@ -61,9 +61,6 @@ const Home = () => {
       {/* Sections */}
       <div id="how-it-works">
         <HowItWorks />
-      </div>
-      <div id="where-we-are">
-        <WhereWeAre />
       </div>
       <div id="benefits">
         <Benefits />

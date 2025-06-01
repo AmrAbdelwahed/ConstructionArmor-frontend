@@ -10,9 +10,9 @@ import SecurityIcon from '@mui/icons-material/Security';
 import StarsIcon from '@mui/icons-material/Stars';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import logo from '../../assets/guardarmor.png';
+import logo from '../../assets/constructionarmor-text.png';
 import mapleLeaf from '../../assets/leaf.png';
-import newLogo from '../../assets/new-logo.png';
+import newLogo from '../../assets/ConstructionArmor.png';
 
 import "@/assets/navbar.css";
 
@@ -59,9 +59,8 @@ const Navbar = () => {
             src={newLogo} 
             alt="Company Logo" 
             style={{ 
-              height: '70px', 
+              height: '90px', 
               width: 'auto', 
-              marginRight: '5px',
               borderRadius: '4px' 
             }} 
           />
@@ -69,7 +68,7 @@ const Navbar = () => {
           <img 
             src={mapleLeaf} 
             alt="Canadian Maple Leaf" 
-            style={{ width: '35px', height: 'auto', marginLeft: '5px' }}
+            style={{ width: '35px', height: 'auto', marginLeft: '2px' }}
           />              
         </div>
       </div>
@@ -99,7 +98,7 @@ const Navbar = () => {
           sx={{
             width: 250,
             height: '100vh',
-            backgroundColor: 'rgb(42, 105, 239)',
+            backgroundColor: '#f47d23',
             color: 'white',
             paddingTop: '10px',
             paddingBottom: '10px',

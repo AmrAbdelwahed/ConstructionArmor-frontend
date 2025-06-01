@@ -6,93 +6,63 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-5xl font-bold text-center mb-24">
-            <span className=" text-blue-900">
+            <span className=" text-[#f47d23]">
               How You Benefit
             </span>
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-20">
-            {/* Security Companies Benefits */}
+            {/* Construction Companies Benefits */}
             <div className="relative">
               <div className="relative bg-white p-10 rounded-3xl shadow-xl">
-                <div className="absolute -top-8 left-10 bg-gradient-to-r from-blue-600 to-blue-600 text-white px-6 py-3 rounded-full font-semibold">
-                  For Security Companies
+                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#f47d23] to-[#f47d23] text-white px-6 py-3 rounded-full font-semibold">
+                  For Construction Companies
                 </div>
                 
                 <div className="space-y-8 mt-6">
-                  <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
-                    Guard Armor is your one-stop-shop for security guard staffing solutions. 
-                    We'll help you save time, money and hassle, so you can focus on your business.
-                  </p>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-[#f47d23]">
+                      Recruitment Solutions We Provide
+                    </h3>
+                    <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
+                      Labour shortages are a frequent issue in construction. These shortages can result in significant project delays and financial losses. Furthermore, to compensate for the lack of workers, many construction workers work longer hours, creating safety concerns. This is particularly true for large construction projects like plazas, condos, or other large-scale buildings that rely on committed staff to see the project through to completion.
+                    </p>
+                  </div>
                   
-                  {[
-                    {
-                      title: "Flexibility",
-                      description: "Whether you need guards for a day, a month, or for the long-term, you can count on Guard Armor to find you the perfect candidate."
-                    },
-                    {
-                      title: "Online & On-Demand Staffing Services",
-                      description: "With on-demand access to our large and growing personnel database, our team will make sure that you get the right match."
-                    },
-                    {
-                      title: "Quality Candidates",
-                      description: "All of our candidates are extensively screened and vetted, so you can focus on your business and leave the staffing to us."
-                    }
-                  ].map((benefit, index) => (
-                    <div key={index} className="group">
-                      <h4 className="text-xl font-bold mb-3 text-blue-900 group-hover:text-blue-600 transition-colors">
-                        {benefit.title}
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  ))}
+                  <div className="group">
+                    <p className="text-gray-600 leading-relaxed">
+                      Construction Armor Staffing is here to help you find skilled contractors for your project. We'll match you with reliable, qualified, and licensed construction workers. If you are satisfied with the workers we provide, you can keep them on board for the duration of the project. Get qualified construction workers verified by an employment agency with a track record of success.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Security Guards Benefits */}
+            {/* Construction Workers Benefits */}
             <div className="relative">
               <div className="relative bg-white p-10 rounded-3xl shadow-xl">
-                <div className="absolute -top-8 left-10 bg-gradient-to-r from-blue-600 to-blue-600 text-white px-6 py-3 rounded-full font-semibold">
-                  For Security Guards
+                <div className="absolute -top-8 left-10 bg-gradient-to-r from-[#f47d23] to-[#f47d23] text-white px-6 py-3 rounded-full font-semibold">
+                  For Construction Workers
                 </div>
                 
                 <div className="space-y-8 mt-6">
-                  <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
-                    For guards, our services are easy to use, and it's free to join! 
-                    Once your job search is successful, you get paid weekly by direct deposit. 
-                    It's that simple.
-                  </p>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-[#f47d23]">
+                      Are You a Job Seeker?
+                    </h3>
+                    <p className="text-lg text-gray-600 border-b border-gray-100 pb-6">
+                      We're here to help you find a reputable construction company that matches your skillset. If you meet the basic skills requirement but need additional training for a specific task, we can help you with that. This will give you the necessary confidence to meet the job requirements needed on-site.
+                    </p>
+                  </div>
                   
-                  {[
-                    {
-                      title: "Search Jobs Quickly and Easily",
-                      description: "Find new jobs. Start getting notified of security opportunities once you sign up. The best jobs are all right here waiting for you."
-                    },
-                    {
-                      title: "Earn More Money & Spend Less Time Searching",
-                      description: "We quickly and easily connect you with companies that offer excellent rates, so you can maximize your income and minimize your time spent looking for jobs."
-                    },
-                    {
-                      title: "Leverage Your Skills & Experience",
-                      description: "Your Guard Armor profile lets your experience do the talking, automatically building your job history as you go. We help you focus on protecting and earning."
-                    },
-                    {
-                      title: "Stay Connected",
-                      description: "The Guard Armor app is your source for accurate, up-to-date information about your jobs, so you'll always know exactly where you're going and who to contact."
-                    }
-                  ].map((benefit, index) => (
-                    <div key={index} className="group">
-                      <h4 className="text-xl font-bold mb-3 text-blue-900 group-hover:text-blue-600 transition-colors">
-                        {benefit.title}
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  ))}
+                  <div className="group">
+                    <h4 className="text-xl font-bold mb-3 text-[#f47d23] group-hover:text-orange-600 transition-colors">
+                      Accessible Application Process
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      To apply simply press on: (Job Seekers Start Here), fill out the application and submit it. The HR will look for a job that suits your specialty and experience and contact you.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

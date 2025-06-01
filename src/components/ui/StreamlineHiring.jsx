@@ -5,27 +5,20 @@ const StreamlineHiring = () => {
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-blue-900 text-center">
-            Streamline Your Hiring Process
+          <h2 className="text-4xl font-bold text-[#f47d23] text-center">
+            24/7 Support
           </h2>
           <br />
-          
+         
           <p className="text-xl text-gray-700 mb-8">
-            The search for experienced security guards is over and your positions will no longer remain 
-            unfilled. Our automated smart-guard matching technology will instantly connect you with 
-            the security professionals you need for any location in Canada. We have you covered, 
-            whether you're in Vancouver, Calgary, Edmonton, Winnipeg, Toronto, Montreal, Halifax, 
-            or anywhere in between.
+            Questions or issues may come up as employers and construction staff work together. We are prepared to handle this. Our support team is available 24/7 to provide assistance.
           </p>
-
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              The Best Way to Find Security Guards
+              Achieve More with Construction Armor Staffing Solutions
             </h3>
             <p className="text-lg text-gray-700">
-              Finding the perfect security guard used to take a lot of time and effort. Not anymore! 
-              With Guard Armor, simply sign up for instant access to our vast network. Posting jobs 
-              is a breeze, just fill in a few details and Guard Armor does the rest!
+              Construction Armor is the construction recruitment agency that works for you by matching reputable employers and construction staff through a thorough process on both ends. Get started with us and leave the vetting process in our hands.
             </p>
           </div>
         </div>

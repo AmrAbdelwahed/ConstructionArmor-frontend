@@ -1,28 +1,37 @@
 import React, { useState } from 'react';
 import '@/assets/LoginSignup.css';
-import { TextField, Snackbar, Alert, CircularProgress } from '@mui/material';
+import { TextField, Snackbar, Alert, CircularProgress, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+import BusinessIcon from '@mui/icons-material/Business';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
-import BusinessIcon from '@mui/icons-material/Business';
 import DialpadTwoToneIcon from '@mui/icons-material/DialpadTwoTone';
-import InfoIcon from '@mui/icons-material/Info';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
+import BuildIcon from '@mui/icons-material/Build';
 import Navbar from './Navbar';
 import StreamlineHiring from './StreamlineHiring';
 import GuardTypes from './GuardTypes';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
+const majorAreas = [
+  'A - Street Construction & Site Work Jobs',
+  'B - Paving & Road Work Jobs',
+  'C - Warehouse & General Labor Roles',
+  'D - Machine Operators (Industrial)',
+  'E - Skilled Trades',
+  'F - Welding Jobs',
+  'G - Construction Trades'
+];
 
 const Companies = () => {
   const [formData, setFormData] = useState({
     companyName: '',
-    email: '',
-    phone: '',
     firstName: '',
     lastName: '',
-    city: '',
-    numberOfGuards: '',
-    service: '',
+    email: '',
+    phone: '',
+    cityProvince: '',
+    majorArea: '',
     details: '',
   });
 
@@ -40,14 +49,13 @@ const Companies = () => {
     const phoneRegex = /^\+?[\d\s-]{10,}$/;
 
     if (!formData.companyName.trim()) newErrors.companyName = 'Company name is required';
-    if (!emailRegex.test(formData.email)) newErrors.email = 'Invalid email format';
-    if (!phoneRegex.test(formData.phone)) newErrors.phone = 'Invalid phone format';
     if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
     if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
-    if (!formData.city.trim()) newErrors.city = 'City is required';
-    if (!formData.numberOfGuards.trim()) newErrors.numberOfGuards = 'Number of security guards is required';
-    if (!formData.service.trim()) newErrors.service = 'Type of service is required';
-    
+    if (!emailRegex.test(formData.email)) newErrors.email = 'Invalid email format';
+    if (!phoneRegex.test(formData.phone)) newErrors.phone = 'Invalid phone format';
+    if (!formData.cityProvince.trim()) newErrors.cityProvince = 'City & Province is required';
+    if (!formData.majorArea) newErrors.majorArea = 'Major area is required';
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -58,6 +66,7 @@ const Companies = () => {
       ...prev,
       [name]: value,
     }));
+    
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
@@ -85,27 +94,27 @@ const Companies = () => {
       if (response.ok) {
         setSnackbar({
           open: true,
-          message: 'Form submitted successfully!',
+          message: 'Company form submitted successfully!',
           severity: 'success',
         });
         setFormData({
           companyName: '',
-          email: '',
-          phone: '',
           firstName: '',
           lastName: '',
-          city: '',
-          numberOfGuards: '',
-          service: '',
+          email: '',
+          phone: '',
+          cityProvince: '',
+          majorArea: '',
           details: '',
         });
       } else {
         throw new Error(data.error || 'Failed to submit form');
       }
     } catch (error) {
+      console.error('Error in form submission:', error);
       setSnackbar({
         open: true,
-        message: error.message,
+        message: error.message || 'An unexpected error occurred',
         severity: 'error',
       });
     } finally {
@@ -119,18 +128,16 @@ const Companies = () => {
 
       <div className="container-form">
         <div className="header">
-          <div className="text">Companies Start Here</div>
+          <div className="text"  style={{ color: '#f47d23' }}>Employers Start Here</div>
         </div>
         <div className="inputs">
-          {[
-            { icon: BusinessIcon, name: 'companyName', placeholder: 'Company Name' },
-            { icon: EmailIcon, name: 'email', placeholder: 'Enter your email address', type: 'email' },
-            { icon: DialpadTwoToneIcon, name: 'phone', placeholder: 'Business phone number', type: 'tel' },
-            { icon: AccountCircleIcon, name: 'firstName', placeholder: 'Enter your First Name' },
-            { icon: AccountCircleIcon, name: 'lastName', placeholder: 'Enter your Last Name' },
-            { icon: LocationCityIcon, name: 'city', placeholder: 'Enter your City' },
-            { icon: InfoIcon, name: 'numberOfGuards', placeholder: "Number of Security Guards" },
-            { icon: InfoIcon, name: 'service', placeholder: 'Type of Service' },
+          {[ 
+            { icon: BusinessIcon, name: 'companyName', placeholder: 'Your Company Name' },
+            { icon: AccountCircleIcon, name: 'firstName', placeholder: 'Your First Name' },
+            { icon: AccountCircleIcon, name: 'lastName', placeholder: 'Your Last Name' },
+            { icon: EmailIcon, name: 'email', placeholder: 'Your Email Address', type: 'email' },
+            { icon: DialpadTwoToneIcon, name: 'phone', placeholder: 'Your Phone Number', type: 'tel' },
+            { icon: LocationCityIcon, name: 'cityProvince', placeholder: 'Your City & Province' },
           ].map(({ icon: Icon, name, placeholder, type = 'text' }) => (
             <div className="input" key={name}>
               <Icon style={{ margin: '0px 30px', color: '#555' }} />
@@ -145,6 +152,35 @@ const Companies = () => {
             </div>
           ))}
 
+          {/* Major Area Dropdown */}
+          <div className="input">
+            <BuildIcon style={{ margin: '0px 30px', color: '#555' }} />
+            <FormControl fullWidth variant="outlined" style={{ marginLeft: '10px' }}>
+              <InputLabel id="major-area-label" style={{ color: '#555' }}>
+                The major area you looking for?
+              </InputLabel>
+              <Select
+                labelId="major-area-label"
+                name="majorArea"
+                value={formData.majorArea}
+                onChange={handleChange}
+                label="The major area you looking for?"
+                style={{
+                  backgroundColor: 'transparent',
+                  color: '#797979',
+                  fontSize: '19px',
+                }}
+              >
+                {majorAreas.map((area, index) => (
+                  <MenuItem key={index} value={area}>
+                    {area}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            {errors.majorArea && <p className="error" style={{ color: 'red' }}>{errors.majorArea}</p>}
+          </div>
+
           <div className="input-container">
             <div className="input">
               <TextField
@@ -158,38 +194,38 @@ const Companies = () => {
                 onChange={handleChange}
                 InputProps={{
                   style: {
-                    backgroundColor: 'transparent', // Matches `.input input`
+                    backgroundColor: 'transparent',
                     border: 'none',
                     outline: 'none',
-                    color: '#797979', // Matches `.input input`
-                    fontSize: '19px', // Matches `.input input`
+                    color: '#797979',
+                    fontSize: '19px',
                   },
                 }}
                 InputLabelProps={{
                   style: {
-                    color: '#555', // Matches label text color in `.input`
+                    color: '#555',
                   },
                 }}
               />
-
-            {errors.details && (
-              <p
-                className="error"
-                style={{
-                  position: 'absolute',
-                  top: '-20px',
-                  right: '0',
-                  color: 'red',
-                  margin: 0,
-                  textAlign: 'right',
-                }}
-              >
-                {errors.details}
-              </p>
-            )}
-          </div>
+              {errors.details && (
+                <p
+                  className="error"
+                  style={{
+                    position: 'absolute',
+                    top: '-20px',
+                    right: '0',
+                    color: 'red',
+                    margin: 0,
+                    textAlign: 'right',
+                  }}
+                >
+                  {errors.details}
+                </p>
+              )}
+            </div>
           </div>
         </div>
+        
         <div className="submit-container">
           <button className="submit" onClick={handleSubmit}>
             Submit
@@ -219,10 +255,7 @@ const Companies = () => {
       <div id="guard-types">
         <GuardTypes />
       </div>
-
     </div>
-
-    
   );
 };
 

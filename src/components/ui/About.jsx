@@ -3,25 +3,25 @@ import { Award, Shield, Zap } from 'lucide-react';
 import canadaImage from '../../assets/canada.png'; // Adjust the relative path if needed
 import { Instagram, Twitter, Linkedin } from 'lucide-react'; // Import icons
 import { SiTiktok, SiX, SiWhatsapp } from 'react-icons/si';
-import newLogo from '../../assets/new-logo.png';
+import newLogo from '../../assets/ConstructionArmor.png';
 
 const About = () => {
   return (
     <div className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto mb-16 text-center">
-          <h2 className="text-4xl font-bold text-blue-900">
-            About GUARDARMOR SECURITY
+          <h2 className="text-4xl font-bold text-[#f2781a] mb-4">
+            About CONSTRUCTION ARMOR
           </h2>
           <div className="flex justify-center mt-2">
-            <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-60 mt-2" />
+            <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-80 mt-2" />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           <div>
             <div className="mb-4">
-              <Award size={32} className="text-blue-600" />
+              <Award size={32} className="text-[#f47d23]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Committed Leader in Staffing
@@ -35,7 +35,7 @@ const About = () => {
 
           <div>
             <div className="mb-4">
-              <Shield size={32} className="text-blue-600" />
+              <Shield size={32} className="text-[#f47d23]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Responsible & Efficient Marketplace
@@ -49,7 +49,7 @@ const About = () => {
 
           <div>
             <div className="mb-4">
-              <Zap size={32} className="text-blue-600" />
+              <Zap size={32} className="text-[#f47d23]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
               Automated Onboarding
@@ -66,7 +66,7 @@ const About = () => {
           {/* Contact Us Button */}
           <a 
             href="mailto:info@guardarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
-            className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors">
+            className="inline-block px-8 py-3 bg-[#f47d23] text-white font-bold rounded-lg hover:text-white hover:bg-orange-700 transition-colors">
             Contact Us
           </a>
 
@@ -86,7 +86,7 @@ const About = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="bg-[#2A69EF] py-8 mt-20">
+      <div className="bg-[#f47d23] py-8 mt-20">
         <div className="container mx-auto px-4">
           <div className="flex justify-center space-x-6">
             {/* Instagram */}

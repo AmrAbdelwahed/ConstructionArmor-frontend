@@ -1,110 +1,137 @@
 import React from 'react';
-import { Shield, CheckCircle, Clock, UserCheck } from 'lucide-react';
+import { Hammer, Wrench, HardHat, Zap, Truck, Settings } from 'lucide-react';
 
-const GuardTypes = () => {
+const WorkerTypes = () => {
+  const workerCategories = [
+    {
+      icon: HardHat,
+      title: "Street Construction & Site Work",
+      color: "from-orange-500 to-orange-400",
+      bgColor: "bg-orange-50",
+      iconColor: "text-orange-600",
+      jobs: [
+        "Traffic Control",
+        "General Laborer", 
+        "Carpenter",
+        "Concrete Finisher",
+        "Layout & Form Setter",
+        "Machine Operator (Excavator, Mini-Excavator, Bobcat, Loader)"
+      ]
+    },
+    {
+      icon: Truck,
+      title: "Paving & Road Work",
+      color: "from-blue-500 to-blue-400",
+      bgColor: "bg-blue-50",
+      iconColor: "text-blue-600",
+      jobs: [
+        "Asphalt Worker",
+        "Sidewalk Finisher",
+        "Sealing Crew",
+        "Curb & Gutter Finisher"
+      ]
+    },
+    {
+      icon: Settings,
+      title: "Warehouse & General Labor",
+      color: "from-green-500 to-green-400",
+      bgColor: "bg-green-50",
+      iconColor: "text-green-600",
+      jobs: [
+        "Assembly Line Worker",
+        "Shipping/Receiving",
+        "RF Scanner Use",
+        "Warehouse Associate",
+        "Material Handler",
+        "Order Picking/Packing"
+      ]
+    },
+    {
+      icon: Settings,
+      title: "Machine Operators (Industrial)",
+      color: "from-purple-500 to-purple-400",
+      bgColor: "bg-purple-50",
+      iconColor: "text-purple-600",
+      jobs: [
+        "CNC Machine Operator",
+        "Punch Press & Stamp Press",
+        "Break Press & Robotics",
+        "Glass Forming",
+        "Bindery Worker",
+        "Flexographic Printing"
+      ]
+    },
+    {
+      icon: Wrench,
+      title: "Skilled Trades",
+      color: "from-red-500 to-red-400",
+      bgColor: "bg-red-50",
+      iconColor: "text-red-600",
+      jobs: [
+        "Electrician/Plumber/HVAC",
+        "Hoisting Engineer (Crane Operator)",
+        "Carpenter/Pipefitter/Gasfitter",
+        "Machinist/Millwright",
+        "Hydraulic Electrician"
+      ]
+    },
+    {
+      icon: Zap,
+      title: "Welding Jobs & Construction Trades",
+      color: "from-yellow-500 to-yellow-400",
+      bgColor: "bg-yellow-50",
+      iconColor: "text-yellow-600",
+      jobs: [
+        "MIG/TIG/Stick/Gas Welder",
+        "Plasma Arc & Spot Welder",
+        "Laser Welding",
+        "Bricklayer/Stone Mason",
+        "Drywaller/Painter/Roofer",
+        "Heavy Equipment/Cement Finisher"
+      ]
+    }
+  ];
+
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-24">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-center text-blue-900 mb-16 leading-tight">
-            The Right Security Guards
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
-              Are Just a Click Away
-            </span>
-          </h2>
-
-          <div className="mb-24">
-            <p className="text-2xl text-gray-600 mb-16 text-center max-w-3xl mx-auto leading-relaxed">
-              Whether you need retail guards, residential guards, or specialized security personnel, 
-              we source only the most experienced professionals.
+    <div className="bg-gradient-to-br from-slate-50 via-white to-slate-100 py-20">
+      <div className="container mx-auto px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 leading-tight">
+              Find the Right
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#f47d23] to-orange-500 mt-2">
+                Specialized Workers
+              </span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+              Connect with experienced professionals across construction, manufacturing, and specialized trades. 
+              Quality workers ready to tackle your next project.
             </p>
+          </div>
 
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 transform rotate-1 rounded-2xl opacity-75 group-hover:rotate-2 transition-transform"></div>
-                <div className="relative bg-white p-8 rounded-2xl shadow-lg transform group-hover:-translate-y-1 transition-transform">
-                  <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
-                    <Shield className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900"> Retail Security Guards or Healthcare Security Officers</h3>
-                </div>
-              </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-300 transform -rotate-1 rounded-2xl opacity-75 group-hover:-rotate-2 transition-transform"></div>
-                <div className="relative bg-white p-8 rounded-2xl shadow-lg transform group-hover:-translate-y-1 transition-transform">
-                  <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
-                    <UserCheck className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Residential Guards or Private Event Guards</h3>
-                </div>
-              </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-200 transform rotate-1 rounded-2xl opacity-75 group-hover:rotate-2 transition-transform"></div>
-                <div className="relative bg-white p-8 rounded-2xl shadow-lg transform group-hover:-translate-y-1 transition-transform">
-                  <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
-                    <Shield className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Parking & Facility Guards or Mobile Patrol Security</h3>
-                </div>
-              </div>
+          {/* Worker Categories Grid */}
+          <div className="grid gap-8 md:gap-10">
+            {/* First Row - 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {workerCategories.slice(0, 3).map((category, index) => (
+                <WorkerCard key={index} category={category} />
+              ))}
+            </div>
+            
+            {/* Second Row - 3 cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {workerCategories.slice(3, 6).map((category, index) => (
+                <WorkerCard key={index + 3} category={category} />
+              ))}
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-blue-900 rounded-3xl transform -rotate-1"></div>
-            <div className="relative bg-blue-800 text-white rounded-3xl p-16">
-              <h2 className="text-3xl font-bold text-center mb-6">
-                Our Premium Screening Process
-              </h2>
-              <p className="text-xl text-blue-100/90 text-center mb-16 max-w-3xl mx-auto">
-                We help you save time in your search for the perfect security guard. Our team takes 
-                the time to verify every guard that completes an application so you get quality 
-                applicants every time.
-              </p>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-                <div className="text-center group">
-                  <div className="transform group-hover:scale-105 transition-transform">
-                    <Shield className="w-16 h-16 mx-auto mb-6 text-blue-200" />
-                    <h3 className="text-xl font-bold text-blue-100 mb-3">Valid Security License</h3>
-                    <p className="text-blue-100/90 text-sm leading-relaxed">
-                      All guards must upload current security licenses and certifications
-                    </p>
-                  </div>
-                </div>
-
-                <div className="text-center group">
-                  <div className="transform group-hover:scale-105 transition-transform">
-                    <CheckCircle className="w-16 h-16 mx-auto mb-6 text-blue-200" />
-                    <h3 className="text-xl font-bold text-blue-100 mb-3">Background Check</h3>
-                    <p className="text-blue-100/90 text-sm leading-relaxed">
-                      Comprehensive background checks and clearance verification
-                    </p>
-                  </div>
-                </div>
-
-                <div className="text-center group">
-                  <div className="transform group-hover:scale-105 transition-transform">
-                    <Clock className="w-16 h-16 mx-auto mb-6 text-blue-200" />
-                    <h3 className="text-xl font-bold text-blue-100 mb-3">Work History</h3>
-                    <p className="text-blue-100/90 text-sm leading-relaxed">
-                      Verified employment history and professional references
-                    </p>
-                  </div>
-                </div>
-
-                <div className="text-center group">
-                  <div className="transform group-hover:scale-105 transition-transform">
-                    <UserCheck className="w-16 h-16 mx-auto mb-6 text-blue-200" />
-                    <h3 className="text-xl font-bold text-blue-100 mb-3">Screening Interview</h3>
-                    <p className="text-blue-100/90 text-sm leading-relaxed">
-                      Personal interview to verify qualifications and experience
-                    </p>
-                  </div>
-                </div>
-              </div>
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="inline-flex items-center gap-3 bg-white rounded-full px-8 py-4 shadow-lg border border-slate-200">
+              <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+              <span className="text-slate-700 font-medium">Ready to connect with skilled workers?</span>
             </div>
           </div>
         </div>
@@ -113,4 +140,40 @@ const GuardTypes = () => {
   );
 };
 
-export default GuardTypes;
+const WorkerCard = ({ category }) => {
+  const Icon = category.icon;
+  
+  return (
+    <div className="group relative">
+      {/* Animated background gradient */}
+      <div className={`absolute inset-0 bg-gradient-to-r ${category.color} transform rotate-1 rounded-3xl opacity-0 group-hover:opacity-20 transition-all duration-300 group-hover:rotate-2 group-hover:scale-105`}></div>
+      
+      {/* Main card */}
+      <div className="relative bg-white p-8 rounded-3xl shadow-lg border border-slate-200 transform group-hover:-translate-y-2 transition-all duration-300 group-hover:shadow-2xl">
+        {/* Icon */}
+        <div className={`w-16 h-16 ${category.bgColor} rounded-2xl mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+          <Icon className={`w-8 h-8 ${category.iconColor}`} />
+        </div>
+        
+        {/* Title */}
+        <h3 className="text-xl font-bold text-slate-800 mb-6 group-hover:text-slate-900 transition-colors">
+          {category.title}
+        </h3>
+        
+        {/* Job list */}
+        <div className="space-y-3">
+          {category.jobs.map((job, jobIndex) => (
+            <div key={jobIndex} className="flex items-start gap-3">
+              <div className={`w-2 h-2 ${category.bgColor} rounded-full mt-2 flex-shrink-0`}></div>
+              <span className="text-slate-600 leading-relaxed hover:text-slate-800 transition-colors">
+                {job}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WorkerTypes;
