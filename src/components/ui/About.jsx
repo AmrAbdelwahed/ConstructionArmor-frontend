@@ -11,7 +11,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto mb-16 text-center">
           <h2 className="text-4xl font-bold text-[#d11234] mb-4">
-            About ARMOR STAFFING Solutions
+            <span className='text-black'>About</span> <br/>ARMOR STAFFING Solutions
           </h2>
           <div className="flex justify-center mt-2">
             <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-80 mt-2" />
