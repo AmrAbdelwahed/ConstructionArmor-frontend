@@ -24,7 +24,6 @@ const Navbar = () => {
   const menuOptions = [
     { text: "Home", icon: <HomeIcon />, href: "/home" },
     { text: "How It Works", icon: <HelpIcon />, href: "#how-it-works" },
-    { text: "Where We Are", icon: <MapIcon />, href: "#where-we-are" },
     { text: "Benefits", icon: <StarsIcon />, href: "#benefits" },
     { text: "Hiring", icon: <BusinessCenterIcon />, href: "#streamline-hiring" },
     { text: "Pricing", icon: <AttachMoneyIcon />, href: "#pricing" },
