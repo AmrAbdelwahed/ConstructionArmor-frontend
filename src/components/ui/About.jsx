@@ -24,12 +24,10 @@ const About = () => {
               <Award size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
-              Committed Leader in Staffing
+              Custom Recruiting Plans
             </h5>
             <p className="text-gray-600">
-              With years experience in the security and protection industries means 
-              access to a network of quality companies and experienced guards. 
-              We work with organizations and customers all across North America.
+              Our plan to source candidates varies based on your specific requests. We work with you to find the solution you need, and don't stop until you are happy!
             </p>
           </div>
 
@@ -38,12 +36,10 @@ const About = () => {
               <Shield size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
-              Responsible & Efficient Marketplace
+              Best Talent
             </h5>
             <p className="text-gray-600">
-              We offer security companies on-demand access to a database of guards 
-              that are pre-vetted for safety, eligibility, and availability. 
-              They're all ready to protect and serve the moment you need them.
+              We help our clients find the best talent fast and select the right fit for their business needs using the most advanced search and selection tools and methods.
             </p>
           </div>
 
@@ -52,12 +48,10 @@ const About = () => {
               <Zap size={32} className="text-[#d11234]" />
             </div>
             <h5 className="text-xl font-bold mb-3">
-              Automated Onboarding
+              Quality of Candidates
             </h5>
             <p className="text-gray-600">
-              An easy application process and automated "smart" guard matching means 
-              companies can connect with the security guards they need, and it's all 
-              done in real-time, with direct communication.
+              The quality of our candidates is an outstanding guarantee that we are able to identify and deliver to our clients the best talent available on the market
             </p>
           </div>
         </div>
