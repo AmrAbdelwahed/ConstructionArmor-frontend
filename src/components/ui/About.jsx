@@ -59,7 +59,7 @@ const About = () => {
         <div className="text-center">
           {/* Contact Us Button */}
           <a 
-            href="mailto:info@guardarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
+            href="mailto:contact@constructionarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
             className="inline-block px-8 py-3 bg-[#d11234] text-white font-bold rounded-lg hover:text-white hover:bg-[#ac332b] transition-colors">
             Contact Us
           </a>
